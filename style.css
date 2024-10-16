@@ -102,20 +102,29 @@ a{
 .author_avatar_container{
     height: 2.5rem;
     width: 2.5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid rgb(137, 132, 132);
     border-radius: 50%;
     background-color: rgb(207, 201, 201);
+    display: flex;
+    justify-content: space-between;
 }
 .author_info_container{
     display: flex;
     flex-direction: column;
+    width: 300rem;
 }
 .author_name {
     color: rgb(29, 29, 194);
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .author_date {
     color: rgb(102, 94, 94);
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .card_tag_container {
     font-size: 0.7rem;
@@ -145,4 +154,12 @@ a{
     .main_container{
         grid-template-columns: repeat(5,1fr);
     }
+}
+.author_info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author_info_container p{
+    width: 90px;
 }
